@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\IMPACTA_TCC.dir/objects.a
+C:\PROGRA~1\CODEBL~1\MinGW\bin\ar.exe qc CMakeFiles\IMPACTA_TCC.dir/objects.a @CMakeFiles\IMPACTA_TCC.dir\objects1.rsp
+C:\PROGRA~1\CODEBL~1\MinGW\bin\C__~1.EXE -Wl,--whole-archive CMakeFiles\IMPACTA_TCC.dir/objects.a -Wl,--no-whole-archive -o IMPACTA_TCC.exe -Wl,--out-implib,libIMPACTA_TCC.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\IMPACTA_TCC.dir\linkLibs.rsp

@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\NEW_BLUE_DJINN_GAMBLING.dir/objects.a
+C:\PROGRA~1\CODEBL~1\MinGW\bin\ar.exe qc CMakeFiles\NEW_BLUE_DJINN_GAMBLING.dir/objects.a @CMakeFiles\NEW_BLUE_DJINN_GAMBLING.dir\objects1.rsp
+C:\PROGRA~1\CODEBL~1\MinGW\bin\C__~1.EXE -Wl,--whole-archive CMakeFiles\NEW_BLUE_DJINN_GAMBLING.dir/objects.a -Wl,--no-whole-archive -o NEW_BLUE_DJINN_GAMBLING.exe -Wl,--out-implib,libNEW_BLUE_DJINN_GAMBLING.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\NEW_BLUE_DJINN_GAMBLING.dir\linkLibs.rsp

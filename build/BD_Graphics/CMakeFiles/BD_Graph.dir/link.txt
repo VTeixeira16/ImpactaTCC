@@ -1,0 +1,2 @@
+C:\PROGRA~1\CODEBL~1\MinGW\bin\ar.exe qc libBD_Graph.a CMakeFiles/BD_Graph.dir/src/BD_Graphics.cpp.obj CMakeFiles/BD_Graph.dir/src/BD_ResourceManager.cpp.obj CMakeFiles/BD_Graph.dir/src/_BD_Graphics.cpp.obj CMakeFiles/BD_Graph.dir/src/_BD_Textures.cpp.obj CMakeFiles/BD_Graph.dir/src/stb_image.cpp.obj CMakeFiles/BD_Graph.dir/src/texture.cpp.obj CMakeFiles/BD_Graph.dir/deps/glad/src/glad.c.obj
+C:\PROGRA~1\CODEBL~1\MinGW\bin\ranlib.exe libBD_Graph.a

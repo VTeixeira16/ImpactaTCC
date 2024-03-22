@@ -1,0 +1,9 @@
+C:/Users/Victor Teixeira/Documents/Projetos/ImpactaTCC/AppFrontCPP/build/CMakeFiles/IMPACTA_TCC.dir
+C:/Users/Victor Teixeira/Documents/Projetos/ImpactaTCC/AppFrontCPP/build/CMakeFiles/edit_cache.dir
+C:/Users/Victor Teixeira/Documents/Projetos/ImpactaTCC/AppFrontCPP/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Victor Teixeira/Documents/Projetos/ImpactaTCC/AppFrontCPP/build/BD_Core/CMakeFiles/BD_Core.dir
+C:/Users/Victor Teixeira/Documents/Projetos/ImpactaTCC/AppFrontCPP/build/BD_Core/CMakeFiles/edit_cache.dir
+C:/Users/Victor Teixeira/Documents/Projetos/ImpactaTCC/AppFrontCPP/build/BD_Core/CMakeFiles/rebuild_cache.dir
+C:/Users/Victor Teixeira/Documents/Projetos/ImpactaTCC/AppFrontCPP/build/BD_Graphics/CMakeFiles/BD_Graph.dir
+C:/Users/Victor Teixeira/Documents/Projetos/ImpactaTCC/AppFrontCPP/build/BD_Graphics/CMakeFiles/edit_cache.dir
+C:/Users/Victor Teixeira/Documents/Projetos/ImpactaTCC/AppFrontCPP/build/BD_Graphics/CMakeFiles/rebuild_cache.dir

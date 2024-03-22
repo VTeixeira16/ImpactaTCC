@@ -1,0 +1,2 @@
+C:\PROGRA~1\CODEBL~1\MinGW\bin\ar.exe qc libBD_Core.a CMakeFiles/BD_Core.dir/src/BD_Core.cpp.obj CMakeFiles/BD_Core.dir/src/BD_Core_curl.cpp.obj
+C:\PROGRA~1\CODEBL~1\MinGW\bin\ranlib.exe libBD_Core.a
