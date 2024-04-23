@@ -1,0 +1,29 @@
+cmake_minimum_required(VERSION 3.17)
+
+project(NEW_BLUE_DJINN_GAMBLING)
+
+option(CPP_17_ACTIVE OFF)
+
+if(CPP_17_ACTIVE)
+    set(CMAKE_CXX_STANDARD_REQUIRED ON)
+    set(CMAKE_CXX_STANDARD 17)
+else()
+endif(CPP_17_ACTIVE)
+
+set(EXAMPLE_PROJECT "BD_DEV" CACHE STRING "Exemplo Ativo: BD_DEV/TCC")
+
+#message(">>>>>CMAKE_BINARY_DIR: ${CMAKE_BINARY_DIR}")
+
+set(BD_OUT ${CMAKE_BINARY_DIR}/BD_Out)
+
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${BD_OUT})
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${BD_OUT})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BD_OUT})
+
+
+
+
+#add_subdirectory(BD_Core)
+add_subdirectory(BD_Graphics)
+
+add_subdirectory(BD_Examples/${EXAMPLE_PROJECT})

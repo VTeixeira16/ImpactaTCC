@@ -1,0 +1,7 @@
+@ImpactaAPI_HostAddress = http://localhost:5292
+//@ImpactaAPI_HostAddress = http://localhost:3306
+
+GET {{ImpactaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3czXHuV7GpIoST67QagGbuRXSQ1+qCnRViWdQshEIeE=",
+  "Source": "ImpactaAPI",
+  "BasePath": "_content/ImpactaAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
