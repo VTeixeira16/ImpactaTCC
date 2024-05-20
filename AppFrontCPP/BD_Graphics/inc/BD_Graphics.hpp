@@ -17,18 +17,9 @@
 #include <unordered_map>
 #include <algorithm>
 
-
-#if __cplusplus > 201703L // Se o C++ atual é 17 ou posterior
-    #include <variant>
-    using std::variant;
-    using std::get;
-#else
-    #include <boost/variant.hpp>
-    using boost::variant;
-    using boost::get;
-    #define USING_BOOST
-#endif
-
+#include <variant>
+using std::variant;
+using std::get;
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>

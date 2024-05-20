@@ -9,12 +9,14 @@
 
 BlueDjinn blueDjinn(1920,1080);
 
-#define MACHINE_NAME "TCC_DESKTOP_WINDOWS_12"
+#define MACHINE_NAME        "TCC_DESKTOP_WINDOWS_12"
+#define MAX_NUMBERS         60
 
 enum GAME_STATE {
     ST_IDLE,
     ST_INIT_PLAY,
     ST_PLAYING,
+    ST_PROCESS_GAME,
     ST_ENDGAME
 };
 
@@ -69,17 +71,76 @@ int LoadData() {
     return 0;
 }
 
+void cleanSortedData(std::vector<unsigned int>& cardNumbers, std::vector<unsigned int>& ballNumbers, std::vector<bool>& cardMarked) {
+
+    cardNumbers.assign(cardNumbers.size(), 0);
+    ballNumbers.assign(ballNumbers.size(), 0);
+    cardMarked.assign(cardMarked.size(), false);
+
+}
+
+void criaSorteio(std::vector<unsigned int> &cardNumbers) {
+
+    std::vector<unsigned int> allNumbers(MAX_NUMBERS);
+
+    for (int i = 0; i < allNumbers.size(); i++) {
+        allNumbers[i] = i + 1;
+    }
+
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dis(0, MAX_NUMBERS - 1);
+    int random_index;
+
+    //Vou criar um while que vai verificar se allNumbers ainda tem elementos e abastecer os 15 ou 30 primeiros itens da lista (baseado em cardNumbers Size)
+    int count = 0;
+    while (!allNumbers.empty() && count < cardNumbers.size()) {
+        std::uniform_int_distribution<> dis(0, allNumbers.size() - 1);
+        random_index = dis(gen);
+
+        cardNumbers[count] = allNumbers[random_index];
+        allNumbers.erase(allNumbers.begin() + random_index);
+
+        count++;
+    }
+        std::sort(cardNumbers.begin(), cardNumbers.end());
+}
+
+int countMarked(std::vector<unsigned int>& cardNumbers, std::vector<unsigned int>& ballNumbers, std::vector<bool>& cardMarked) {
+    unsigned int marked = 0;
+    unsigned int count = 0;
+    std::cout << "size(cardNumbers):" << cardNumbers.size() << std::endl;
+    std::cout << "size(ballNumbers):" << ballNumbers.size() << std::endl;
+    
+    while (count < cardNumbers.size() && count < ballNumbers.size()) {
+
+        std::cout << "count:" << count << std::endl;
+
+        for (int i = 0; i < ballNumbers.size(); i++) {
+            if (cardNumbers[count] == ballNumbers[i]) {
+                cardMarked[count] = true;
+                marked++;
+                break;
+            }
+        }
+
+
+        count++;
+    }
+
+
+    return marked;
+}
+
 int main(){
 
-//    realizarSolicitacaoHTTP("https://localhost:7013/api/LoginData/1", "GET", "");
+    verificarAPI("https://localhost:7013/api/LoginData/1", CURL_GET, "");
+    realizarSolicitacaoHTTP("https://example.com", "GET", "");
+
 
 
     LoadData();
     std::cout << __FUNCTION__ << " " << __LINE__ << std::endl;
-//    verificarAPI("https://localhost:7013/api/LoginData/1", CURL_GET, NULL);
-
-//    verificarAPI("https://localhost:7013/api/LoginData/3");
-
 
     //Card Position Data
     glm::vec2 cardPosition = glm::vec2(110, 110);
@@ -92,22 +153,32 @@ int main(){
 
     GAME_STATE gameState = ST_IDLE;
 
-    std::vector<unsigned int> cardNumbers = { 1,2,3,4,50,6,7,8,9,10,11,12,13,14,15 };
-    std::vector<unsigned int> ballSorted(60);
+    std::vector<unsigned int> ballSorted(30);
+
+    std::vector<unsigned int> cardNumbers(15);
     std::vector<bool> cardMarked(15);
     int countNumbers = 0;
+    int totalCountNumbers = 0;
+    int games = 0;
 
     //Random in CPP
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> dis(1, 60);
 
+
+    criaSorteio(cardNumbers);
+    criaSorteio(ballSorted);
+
+
     //TODO - REMOVER
-    for (int i = 0; i < ballSorted.size(); i++) {
-        ballSorted[i] = dis(gen);
-    }
+    //for (int i = 0; i < ballSorted.size(); i++) {
+    //    ballSorted[i] = dis(gen);
+    //}
 
     //BD_Core_curl_get("https://localhost:7013/api/LoginData/1");
+
+
 
 
 
@@ -122,44 +193,52 @@ int main(){
             break;
         case ST_INIT_PLAY:
             countNumbers = 0;
-            for (int i = 0; i < cardNumbers.size(); i++) {
-                cardMarked[i] = false;
-                cardNumbers[i] = dis(gen);
+            cleanSortedData(cardNumbers, ballSorted, cardMarked);
 
-            }
-            for (int i = 0; i < ballSorted.size(); i++) {
-                ballSorted[i] = dis(gen);
-            }
-            std::sort(std::begin(cardNumbers), std::end(cardNumbers));
-            //TODO - Remover depois
-            std::sort(std::begin(ballSorted), std::end(ballSorted));
+            criaSorteio(cardNumbers);
+            criaSorteio(ballSorted);
+            //std::sort(std::begin(cardNumbers), std::end(cardNumbers));
+            ////TODO - Remover depois
+            //std::sort(std::begin(ballSorted), std::end(ballSorted));
             gameState = ST_PLAYING;
             break;
         case ST_PLAYING:
             //Verfica se número sorteado tem na cartela
-            for (int i = 0; i < ballSorted.size(); i++) {
-                for (int j = 0; j < cardNumbers.size(); j++) {
 
-                    if (ballSorted[i] == cardNumbers[j]) {
-                        std::string countText = "Valor do ballSorted[i]: " + std::to_string(ballSorted[i]) + " - Valor do cardNumbers[j]: " + std::to_string(cardNumbers[j]);
-                        std::cout << countText << std::endl;
-                        countNumbers++;
-                        cardMarked[j] = true;
-                        //break;
-                    }
-                }
+            countNumbers = countMarked(cardNumbers, ballSorted, cardMarked);
+
+            games++;
+            totalCountNumbers += countNumbers;
+            gameState = ST_PROCESS_GAME;
+            break;
+        case ST_PROCESS_GAME:
+            if (!blueDjinn.GetKeyInput(GLFW_KEY_ENTER) && !blueDjinn.GetKeyInput(GLFW_KEY_KP_ENTER)) {
+                gameState = ST_ENDGAME;
             }
-            gameState = ST_ENDGAME;
             break;
         case ST_ENDGAME:
-            if (blueDjinn.GetKeyInput(GLFW_KEY_SPACE)) {
-                const char *currentTime = formatData();
+            if (blueDjinn.GetKeyInput(GLFW_KEY_ENTER) || blueDjinn.GetKeyInput(GLFW_KEY_KP_ENTER)) {
+                //Continua Partida
+                const char* currentTime = formatData();
                 std::cout << "HORA ATUAL: " << currentTime << std::endl;
-                char body[26] = {0};
+                char body[128] = { 0 };
                 sprintf(body, "{ \"machineName\": \"%s\", \"dateTimePlay\": \"%s\", \"hitsTotal\": %i}", MACHINE_NAME, currentTime, countNumbers);
                 verificarAPI("https://localhost:7013/api/HitsNumber", CURL_POST, body);
                 gameState = ST_IDLE;
             }
+            if (blueDjinn.GetKeyInput(GLFW_KEY_SPACE)) {
+                //Encerra partida
+                const char* currentTime = formatData();
+                std::cout << "HORA ATUAL: " << currentTime << std::endl;
+                char body[128] = { 0 };
+                sprintf(body, "{ \"machineName\": \"%s\", \"dateTimePlay\": \"%s\", \"hitsTotal\": %i, \"totalGames\": %i}", MACHINE_NAME, currentTime, totalCountNumbers, games);
+                verificarAPI("https://localhost:7013/api/GamesNumber", CURL_POST, body);
+                gameState = ST_IDLE;
+                games = 0;
+                totalCountNumbers = 0;
+            }
+
+
             break;
         default:
             break;
@@ -172,12 +251,18 @@ int main(){
         std::string countText = "Contador: " + std::to_string(countNumbers);
         blueDjinn.DrawText2D("fontContador", countText, 0, 0, 2, 1.0f, glm::vec3(0.0f, 0.0f, 0.0f));
 
+        std::string gameStateText = "Estado Atual: " + std::to_string(gameState);
+        blueDjinn.DrawText2D("fontContador", gameStateText, 400, 0, 2, 1.0f, glm::vec3(0.0f, 0.0f, 0.0f));
+
+        std::string gameQttText = "Partidas: " + std::to_string(games);
+        blueDjinn.DrawText2D("fontContador", gameQttText, 900, 0, 2, 1.0f, glm::vec3(0.0f, 0.0f, 0.0f));
+
 
 
         //blueDjinn.DrawSimpleTexture("container", 0, 0, 4);
 //        blueDjinn.DrawTexture("fundoCartela", glm::vec3(cardPosition.x - 10, cardPosition.y - 10, 0), glm::vec2(102, 103), 0.0f, glm::vec3(1.0f, 1.0f, 1.0f));
 
-        blueDjinn.DrawSimpleTexture("fundoCartela", cardPosition.x, cardPosition.y, 50);
+        blueDjinn.DrawSimpleTexture("fundoCartela", cardPosition.x, cardPosition.y, 0);
         blueDjinn.DrawSimpleTexture("cartela", cardPosition.x, cardPosition.y, 1);
 
         //blueDjinn.DrawSimpleTexture("impacta", 200, 200, 10);

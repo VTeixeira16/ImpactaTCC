@@ -53,14 +53,7 @@ int verificarAPI(const char *endpoint, int typeRequisition, const char *body) {
             return 1;
         }
 
-
-
-
-
-
-
-
-        // Realiza a solicitação HTTP GET
+// Realiza a solicitação HTTP GET
         res = curl_easy_perform(curl);
         if(res != CURLE_OK){
             std::cerr << "Erro ao realizar a solicitação HTTP: " << curl_easy_strerror(res) << std::endl;
@@ -123,6 +116,9 @@ int realizarSolicitacaoHTTP(const char *endpoint, const std::string& tipoSolicit
 
         // Sempre limpe depois de usar
         curl_easy_cleanup(curl);
+    } else {
+        std::cout << "Erro ao iniciar CURL " << response << std::endl;
+
     }
     return 0;
 }

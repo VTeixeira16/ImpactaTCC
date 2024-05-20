@@ -1,5 +1,47 @@
 [
   {
+    "ContainingType": "ImpactaAPI.Controllers.GamesNumberController",
+    "Method": "Post",
+    "RelativePath": "api/GamesNumber",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gamesNumber",
+        "Type": "ImpactaAPI.Models.GamesNumber",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ImpactaAPI.Controllers.GamesNumberController",
+    "Method": "Get",
+    "RelativePath": "api/GamesNumber/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ImpactaAPI.Models.GamesNumber",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ImpactaAPI.Controllers.HitsNumberController",
     "Method": "Post",
     "RelativePath": "api/HitsNumber",

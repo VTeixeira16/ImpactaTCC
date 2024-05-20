@@ -15,4 +15,6 @@ public class AppDbContext : DbContext
     public DbSet<LoginData>? LoginDataDb { get; set; }
 
     public DbSet<HitsNumber>? HitsNumberDb { get; set; }
+
+    public DbSet<GamesNumber>? GamesNumberDb{ get; set; }
 }

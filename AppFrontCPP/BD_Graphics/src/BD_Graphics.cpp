@@ -165,13 +165,9 @@ int BlueDjinn::DrawTexture(std::string textureName, glm::vec3 position, glm::vec
     Texture2D myTexture;
     myTexture = ResourceManager::GetTexture(textureName);
 
-#ifdef USING_BOOST
-    Renderer->DrawSprite(myTexture, position, size, rotate, color);
-#else
     TextureRender textureRender(textureName, glm::vec2(position.x, position.y), glm::vec2(myTexture.Width * (size.x / 100), myTexture.Height * (size.y / 100)), rotate, color);
 
     RenderList.push_back(std::make_tuple(position.z, "image", textureRender));
-#endif
 
     return 0;
 }
@@ -182,12 +178,8 @@ int BlueDjinn::DrawSimpleTexture(std::string textureName, int x, int y, int z)
     Texture2D myTexture;
     myTexture = ResourceManager::GetTexture(textureName);
     glm::vec2 size = glm::vec2(myTexture.Width, myTexture.Height);
-#ifdef USING_BOOST
-    Renderer->DrawSprite(myTexture, glm::vec2(x, y), glm::vec2(myTexture.Width, myTexture.Height), 0.0f, glm::vec3(1.0f, 1.0f, 1.0f));
-#else
     TextureRender textureRender(textureName, glm::vec2(x, y), glm::vec2(myTexture.Width, myTexture.Height), 0.0f, glm::vec3(1.0f, 1.0f, 1.0f));
     RenderList.push_back(std::make_tuple(z, "image", textureRender));
-#endif
     return 0;
 }
 
@@ -199,24 +191,9 @@ int BlueDjinn::DrawAnimationTexture(std::string textureName, int x, int y, int z
 
 int BlueDjinn::DrawText2D(std::string fontName, std::string text, float x, float y, float z, float scale, glm::vec3 color)
 {
-#ifdef USING_BOOST
-    Font2D myFont;
-    myFont = ResourceManager::GetFont(fontName);
-
-//    std::cout << "Size:[" << myFont.size << "]" <<std::endl;
-//    std::cout << "Function: " << __FUNCTION__ << " - Line: " << __LINE__ << " ID:[" << myFont.ID << "] Size:[" << myFont.size << "]." << std::endl;
-
-    Text->RenderText(myFont, text, x, y, scale, color);
-#else
     TextRender textRender(fontName, text, x, y, scale, color);
 
     RenderList.push_back(std::make_tuple(z, "text", textRender));
-#endif
-
-
-
-
-
 
     return 0;
 }
@@ -244,7 +221,6 @@ int BlueDjinn::InitRender()
 
 int BlueDjinn::ProcessRenderList()
 {
-#ifndef USING_BOOST
     auto compareZIndex = [](const auto& a, const auto& b) {
         return std::get<0>(a) < std::get <0> (b);
     };
@@ -280,8 +256,6 @@ int BlueDjinn::ProcessRenderList()
 
     }
 
-
-#endif
     return 0;
 }
 
