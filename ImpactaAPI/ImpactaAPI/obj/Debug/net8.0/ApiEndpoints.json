@@ -42,6 +42,16 @@
     ]
   },
   {
+    "ContainingType": "ImpactaAPI.Controllers.GamesNumberController",
+    "Method": "DeleteLast",
+    "RelativePath": "api/GamesNumber/DeleteLast",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ImpactaAPI.Controllers.HitsNumberController",
     "Method": "Post",
     "RelativePath": "api/HitsNumber",

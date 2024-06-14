@@ -2,6 +2,7 @@
 using ImpactaAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace ImpactaAPI.Controllers;
 
@@ -39,5 +40,22 @@ public class GamesNumberController : ControllerBase
 
         return new CreatedAtRouteResult("ObterGameNumber",
             new { id = gamesNumber.id }, gamesNumber);
+    }
+
+    [HttpDelete("DeleteLast")]
+    public ActionResult DeleteLast()
+    {
+        // Ordena os registros em ordem decrescente pelo ID e pega o primeiro (último adicionado)
+        var lastGameNumber = _context.GamesNumberDb
+            .OrderByDescending(g => g.id)
+            .FirstOrDefault();
+
+        if (lastGameNumber == null)
+            return NotFound("Nenhuma jogada encontrada");
+
+        _context.GamesNumberDb.Remove(lastGameNumber);
+        _context.SaveChanges();
+
+        return NoContent();
     }
 }

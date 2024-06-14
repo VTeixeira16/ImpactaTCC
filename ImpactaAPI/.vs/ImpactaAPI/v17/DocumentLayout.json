@@ -3,32 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\controllers\\logindatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\controllers\\logindatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\impactaapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\impactaapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\models\\logindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\models\\logindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\controllers\\gamesnumbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\controllers\\gamesnumbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\controllers\\communicationbdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\controllers\\communicationbdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\communicationbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\communicationbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\models\\gamesnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\models\\gamesnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\controllers\\hitsnumbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\controllers\\hitsnumbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\models\\hitsnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\models\\hitsnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\controllers\\communicationbdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\controllers\\communicationbdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|c:\\users\\victor teixeira\\documents\\projetos\\impactaapi\\impactaapi\\models\\logindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF47DF4-4987-4101-A4A3-BD4E7D765816}|ImpactaAPI\\ImpactaAPI.csproj|solutionrelative:impactaapi\\models\\logindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,89 +79,165 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Context\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "ImpactaAPI\\Context\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Context\\AppDbContext.cs",
-              "RelativeToolTip": "ImpactaAPI\\Context\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T12:14:04.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\Categoria.cs",
-              "RelativeDocumentMoniker": "ImpactaAPI\\Models\\Categoria.cs",
-              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\Categoria.cs",
-              "RelativeToolTip": "ImpactaAPI\\Models\\Categoria.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T21:11:15.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HitsNumber.cs",
-              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\HitsNumber.cs",
-              "RelativeDocumentMoniker": "ImpactaAPI\\Models\\HitsNumber.cs",
-              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\HitsNumber.cs",
-              "RelativeToolTip": "ImpactaAPI\\Models\\HitsNumber.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T19:48:27.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginData.cs",
-              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\LoginData.cs",
-              "RelativeDocumentMoniker": "ImpactaAPI\\Models\\LoginData.cs",
-              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\LoginData.cs",
-              "RelativeToolTip": "ImpactaAPI\\Models\\LoginData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T18:11:24.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CommunicationBDController.cs",
-              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Controllers\\CommunicationBDController.cs",
-              "RelativeDocumentMoniker": "ImpactaAPI\\Controllers\\CommunicationBDController.cs",
-              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Controllers\\CommunicationBDController.cs",
-              "RelativeToolTip": "ImpactaAPI\\Controllers\\CommunicationBDController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowCcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T23:27:23.346Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "ImpactaAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\appsettings.json",
+              "RelativeToolTip": "ImpactaAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-14T06:39:09.964Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginDataController.cs",
-              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Controllers\\LoginDataController.cs",
-              "RelativeDocumentMoniker": "ImpactaAPI\\Controllers\\LoginDataController.cs",
-              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Controllers\\LoginDataController.cs",
-              "RelativeToolTip": "ImpactaAPI\\Controllers\\LoginDataController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T23:26:33.486Z",
+              "Title": "ImpactaAPI.http",
+              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\ImpactaAPI.http",
+              "RelativeDocumentMoniker": "ImpactaAPI\\ImpactaAPI.http",
+              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\ImpactaAPI.http",
+              "RelativeToolTip": "ImpactaAPI\\ImpactaAPI.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-06-14T06:39:02.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ImpactaAPI\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\appsettings.Development.json",
+              "RelativeToolTip": "ImpactaAPI\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-14T06:38:59.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GamesNumber.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\GamesNumber.cs",
+              "RelativeDocumentMoniker": "ImpactaAPI\\Models\\GamesNumber.cs",
+              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\GamesNumber.cs",
+              "RelativeToolTip": "ImpactaAPI\\Models\\GamesNumber.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T20:22:54.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginData.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\LoginData.cs",
+              "RelativeDocumentMoniker": "ImpactaAPI\\Models\\LoginData.cs",
+              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\LoginData.cs",
+              "RelativeToolTip": "ImpactaAPI\\Models\\LoginData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T20:24:19.631Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ImpactaAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Program.cs",
+              "RelativeToolTip": "ImpactaAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T20:24:16.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ImpactaAPI\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "ImpactaAPI\\Context\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T20:23:13.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "HitsNumberController.cs",
               "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Controllers\\HitsNumberController.cs",
               "RelativeDocumentMoniker": "ImpactaAPI\\Controllers\\HitsNumberController.cs",
               "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Controllers\\HitsNumberController.cs",
               "RelativeToolTip": "ImpactaAPI\\Controllers\\HitsNumberController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACMAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T19:48:56.445Z"
+              "WhenOpened": "2024-05-19T20:22:11.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GamesNumberController.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Controllers\\GamesNumberController.cs",
+              "RelativeDocumentMoniker": "ImpactaAPI\\Controllers\\GamesNumberController.cs",
+              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Controllers\\GamesNumberController.cs",
+              "RelativeToolTip": "ImpactaAPI\\Controllers\\GamesNumberController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA5wDUAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T20:17:21.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CommunicationBD.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\CommunicationBD.cs",
+              "RelativeDocumentMoniker": "ImpactaAPI\\CommunicationBD.cs",
+              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\CommunicationBD.cs",
+              "RelativeToolTip": "ImpactaAPI\\CommunicationBD.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T07:29:00.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "ImpactaAPI\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\Produto.cs",
+              "RelativeToolTip": "ImpactaAPI\\Models\\Produto.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T06:40:25.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CommunicationBDController.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Controllers\\CommunicationBDController.cs",
+              "RelativeDocumentMoniker": "ImpactaAPI\\Controllers\\CommunicationBDController.cs",
+              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Controllers\\CommunicationBDController.cs",
+              "RelativeToolTip": "ImpactaAPI\\Controllers\\CommunicationBDController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T20:26:42.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HitsNumber.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\HitsNumber.cs",
+              "RelativeDocumentMoniker": "ImpactaAPI\\Models\\HitsNumber.cs",
+              "ToolTip": "C:\\Users\\Victor Teixeira\\Documents\\Projetos\\ImpactaAPI\\ImpactaAPI\\Models\\HitsNumber.cs",
+              "RelativeToolTip": "ImpactaAPI\\Models\\HitsNumber.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T20:25:24.013Z"
             }
           ]
         },

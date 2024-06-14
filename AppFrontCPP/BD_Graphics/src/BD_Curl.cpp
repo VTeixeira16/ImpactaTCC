@@ -42,12 +42,8 @@ int verificarAPI(const char *endpoint, int typeRequisition, const char *body) {
             headers = curl_slist_append(headers, "Content-Type: application/json");
             curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
         } else if (typeRequisition == CURL_UPDATE) {
-//            url += "/update";
         } else if (typeRequisition == CURL_DELETE) {
-//            curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DELETE");
-//            // Defina a URL do endpoint de exclusão
-//            url += "/delete";
-//            curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+            curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DELETE");
         } else {
             std::cerr << "Tipo de solicitação inválido" << std::endl;
             return 1;

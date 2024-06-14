@@ -2,9 +2,10 @@
 #include "BD_Curl.hpp"
 
 #include <iostream>
-
 #include <random>
 #include <time.h>
+
+#include <windows.h>
 //#include "BD_Texture.hpp"
 
 BlueDjinn blueDjinn(1920,1080);
@@ -134,8 +135,8 @@ int countMarked(std::vector<unsigned int>& cardNumbers, std::vector<unsigned int
 
 int main(){
 
-    verificarAPI("https://localhost:7013/api/LoginData/1", CURL_GET, "");
-    realizarSolicitacaoHTTP("https://example.com", "GET", "");
+    //verificarAPI("https://localhost:7013/api/LoginData/1", CURL_GET, "");
+    //realizarSolicitacaoHTTP("https://example.com", "GET", "");
 
 
 
@@ -189,6 +190,17 @@ int main(){
         case ST_IDLE:
             if (blueDjinn.GetKeyInput(GLFW_KEY_ENTER) || blueDjinn.GetKeyInput(GLFW_KEY_KP_ENTER)) {
                 gameState = ST_INIT_PLAY;
+            }
+            if (blueDjinn.GetKeyInput(GLFW_KEY_F1)) {
+
+                //const char* currentTime = formatData();
+                //std::cout << "HORA ATUAL: " << currentTime << std::endl;
+                //char body[128] = { 0 };
+                //sprintf(body, "{ \"machineName\": \"%s\", \"dateTimePlay\": \"%s\", \"hitsTotal\": %i, \"totalGames\": %i}", MACHINE_NAME, currentTime, totalCountNumbers, games);
+                verificarAPI("https://localhost:7013/api/GamesNumber/DeleteLast", CURL_DELETE, "");
+                //std::this_thread::sleep_for(std::chrono::milliseconds(500));
+                Sleep(500);
+
             }
             break;
         case ST_INIT_PLAY:
